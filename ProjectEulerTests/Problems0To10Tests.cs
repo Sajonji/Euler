@@ -59,7 +59,7 @@ public class Problems0To10Tests
     {
         var expected = 29;
 
-        var actual = LargestPrimeFactor.GetLargestPrimeFactor(13195);
+        var actual = PrimeFactor.GetLargestPrimeFactor(13195);
 
         Assert.Equal(expected, actual);
     }
@@ -69,7 +69,7 @@ public class Problems0To10Tests
     {
         var expected = 6857;
 
-        var actual = LargestPrimeFactor.GetLargestPrimeFactor(600851475143);
+        var actual = PrimeFactor.GetLargestPrimeFactor(600851475143);
 
         Assert.Equal(expected, actual);
     }
@@ -90,6 +90,66 @@ public class Problems0To10Tests
         var expected = 906609;
 
         var actual = LargestPalindromeProduct.GetLargestPalindromeProduct(999);
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GetSmallestMultiple_10_2520()
+    {
+        var expected = 2520;
+
+        var actual = SmallestMultiple.GetSmallestMultiple(10);
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GetSmallestMultiple_20_232792560()
+    {
+        var expected = 232792560;
+
+        var actual = SmallestMultiple.GetSmallestMultiple(20);
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GetSumSquareDifference_10_2640()
+    {
+        var expected = 2640;
+
+        var actual = SumSquareDifference.GetSumSquareDifference(10);
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GetSumSquareDifference_100_25164150()
+    {
+        var expected = 25164150;
+
+        var actual = SumSquareDifference.GetSumSquareDifference(100);
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GetNthPrimeNumber_6_13()
+    {
+        var expected = 13;
+
+        var actual = PrimeNumbers.GetNthPrimeNumber(6);
+
+        Assert.Equal(expected, actual);
+    }
+
+    [Fact]
+    public void GetNthPrimeNumber_10001_104743()
+    {
+        var expected = 104743;
+
+        var actual = PrimeNumbers.GetNthPrimeNumber(10001);
 
         Assert.Equal(expected, actual);
     }

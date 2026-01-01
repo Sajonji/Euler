@@ -1,8 +1,20 @@
 namespace ProjectEuler.Problems0To10;
 
-public static class LargestPrimeFactor
+public static class PrimeFactor
 {
     public static int GetLargestPrimeFactor(long number)
+    {
+        var primeFactors = ComputePrimeFactors(number);
+        
+        return primeFactors.Max();
+    }
+
+    public static List<int> GetAllPrimeFactors(long number)
+    {
+        return ComputePrimeFactors(number);
+    }
+
+    private static List<int> ComputePrimeFactors(long number)
     {
         List<int> primeFactors = [];
 
@@ -19,6 +31,6 @@ public static class LargestPrimeFactor
             }
         }
         
-        return primeFactors.Max();
+        return primeFactors;
     }
 }
